@@ -1,7 +1,7 @@
 /*
   scanfilt.h (Scanf Filter Library) - Safe input library for C
 
-  Author: Jack Sparrow
+  Author: Mohit Kumar
   Email: mohitkumarkk0704th@gmail.com
   GitHub: https://github.com/its-mohitkumar-7
   Created: 19/10/2025
