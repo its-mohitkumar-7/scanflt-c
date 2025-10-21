@@ -9,22 +9,24 @@ int main(){
   char    e1[50], e2[50];
   char    f1[50], f2[50];
 
-    getint(&a1,"This is getint with statement argument: ");
+    printf("NOTE: First line of the function call is with a statement, and the second call uses NULL or '\\0' character.\n\n\n");
+    
+    getint(&a1,"This is getint function with statement argument: ");
     getint(&a2,"");
     
-    getfloat(&b1,"This is getfloat with statement argument: ");
+    getfloat(&b1,"This is getfloat function with statement argument: ");
     getfloat(&b2,NULL);
 
-    getdouble(&c1,"This is getdouble with statement argument: ");
+    getdouble(&c1,"This is getdouble function with statement argument: ");
     getdouble(&c2,"");
     
-    getch(&d1,"This is getch with statement argument: ");
+    getch(&d1,"This is getch function with statement argument: ");
     getch(&d2,"");
     
-    getstr(e1,"This is str getstr with statement argument: ");
+    getstr(e1,"This is str getstr function with statement argument: ");
     getstr(e2,"");
     
-    getstrbuff(f1,sizeof(f1),"This is getstrbuff with statement argument: ");
+    getstrbuff(f1,sizeof(f1),"This is getstrbuff function with statement argument: ");
     getstrbuff(f2,sizeof(f2),NULL);
 
     printf("\n\n");
@@ -36,6 +38,20 @@ int main(){
     printf("This is e1: %s    This is e2: %s\n",e1,e2);
     printf("This is f1: %s    This is f2: %s\n",f1,f2);
 
+    printf("\n\n_________________Difference in scanf and scanflt-library________________\n");
+
+    for(int i=0; i<5; i++){  //1st case
+      printf("\n\n\n Try to input a non-integer value like 'a', 'b', '@', etc. to see scanf's unexpected behavior: ");
+      scanf("%d",&a1);
+      printf("%d",a1);
+      scanf("%d",&a2);
+      printf("%d",a2);
+    }
+    
+    /* 2nd case
+    printf("Try to input non integer value like 'a','b','@' etc. for watching scanf's unexpected behaviour: ");
+    scanf("%d",&a1);*/
+    
 return 0;
 }
 
