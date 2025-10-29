@@ -47,21 +47,13 @@ Whether you're building console applications, educational tools, or production s
 
 ## 📥 Installation
 
-### Method 1: Direct Include (Recommended for small projects)
-
-1. Download the `scanflt.h` header file
-2. Place it in your project directory
-
-
-3. Include it in your C files:
+1. Download the `scanflt.h` header file or click [here](https://github.com/its-mohitkumar-7/scanflt-c/blob/main/scanflt.h) for direct download.
+2. Place it in your project directory.
+3. Include it in your C files (make sure use **" "**):
 
 ```c
 #include "scanflt.h"
 ```
-### Method 2: By Clonning repository
-1. type `git clone 
-https://github.com/its-mohitkumar-7/scanflt-c.git` in terminal of your project's location.
-2. include `#include"scanflt.h header` file in your code file (make sure use ****" "****).
 
 ## 📚API Reference
 
